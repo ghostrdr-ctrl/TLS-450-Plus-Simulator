@@ -1,0 +1,65 @@
+TLS-450PLUS Simulator
+Copyright (c) 2026 Verbose Software. All rights reserved.
+
+1. Permission to use
+
+   You may download, install and use this software free of charge, for any
+   purpose, including at work and for training others. You may give the
+   unmodified installer, as published, to someone else, provided you charge
+   nothing for it.
+
+2. Restrictions
+
+   You may not:
+   a. sell, rent, lease or sublicense the software, or include it in anything
+      that is sold;
+   b. modify it, or distribute it in any form other than the unmodified
+      published installer;
+   c. decompile, disassemble or otherwise reverse engineer it, or attempt to
+      derive its source code, except where the law expressly allows this
+      despite this restriction;
+   d. remove or change this licence or any copyright, trademark or other
+      notice in it;
+   e. present the software, or anything made from it, as your own work.
+
+3. Not a console
+
+   This software simulates a tank monitoring console for training and testing
+   only. It does not monitor real tanks, lines or sensors, and nothing it
+   shows is a reading from real equipment. Do not use it to make decisions
+   about real equipment, compliance, leak detection or the environment. It is
+   not a substitute for a real console or for the manufacturer's
+   documentation.
+
+4. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+   If you point a tool at the simulator and then at a real console, test it
+   on the simulator first, back up the real console before any change, and
+   check the result on the console itself.
+
+5. Independence and trademarks
+
+   This software is independent. It is not affiliated with, authorized by,
+   sponsored by, or endorsed by Veeder-Root, Gilbarco Veeder-Root, Vontier
+   Corporation or any of their affiliates. "Veeder-Root" and "TLS-450PLUS" are
+   trademarks of their respective owners, used only to state what console the
+   software simulates.
+
+6. Third-party components
+
+   The software includes components from other authors under their own
+   licences, listed in THIRD-PARTY-NOTICES.md. Those licences apply to those
+   components; nothing in this licence limits the rights they give.
+
+7. Termination
+
+   This permission ends automatically if you break any of these terms. You
+   must then stop using the software and delete every copy you have.
