@@ -1,11 +1,11 @@
 # TLS-450PLUS Simulator
 
 A training simulator for TLS-450PLUS tank monitoring consoles, for Windows.
-Practise on the console's touchscreen, set up sites, raise alarms and run
+Practice on the console's touchscreen, set up sites, raise alarms and run
 reports, without a console on the bench.
 
 > **Beta software.** This is an early release. Some screens and features are
-> not built yet and show a notice instead, and some behaviour may differ from
+> not built yet and show a notice instead, and some behavior may differ from
 > a real console. Do not rely on it for anything that matters on a real site.
 
 > **Not a Gilbarco Veeder-Root product.** This is an independent program. It
@@ -19,8 +19,8 @@ reports, without a console on the bench.
 | | |
 | --- | --- |
 | ![Tank Overview](screenshots/tank-overview.png) | **The touchscreen.** The console's screens, menus, popups and keyboards at the console's own 800 x 480 size. Tanks fill and empty, deliveries arrive, alarms post and clear, and reports fill up over time. |
-| ![Tank Detail](screenshots/tank-detail.png) | **Tanks, lines and sensors.** Inventory, deliveries, leak tests, line tests and sensor alarms behave the way the console handles them. |
-| ![Menu](screenshots/menu.png) | **Menus and setup.** Find your way round Diagnostics, Overview, Reports, Setup and Software Maintenance as on the console. |
+| ![Tank Detail](screenshots/tank-detail.png) | **Tanks, lines and sensors.** Inventory, deliveries, leak tests, line tests and sensor alarms, modeled on the console's behavior. |
+| ![Menu](screenshots/menu.png) | **Menus and setup.** Find your way around Diagnostics, Overview, Reports, Setup and Software Maintenance, laid out like the console's menus. |
 
 **The instructor's bench.** A panel beside the touchscreen: change tank
 levels, send a tanker, raise a sensor or probe alarm, pull the power, speed
@@ -32,14 +32,27 @@ unpacked snapshot folder) and the simulator takes on that site's tanks,
 products, lines, sensors and settings. Export the simulated site as a snapshot
 at any time.
 
-**Serial port.** Off unless you ask for it: start the program with
-`--serial 127.0.0.1:10001` and a tool that talks to a console over TCP can
-connect to the simulator instead.
+**Serial port.** Off unless you turn it on: the bench's Serial port card
+opens the console's serial command port (default 10001), so a program that
+talks to a console over TCP can connect to the simulator instead. Choose
+**This PC only**, or **Other computers too** to let other computers on your
+network connect (Windows may ask to allow the simulator through its
+firewall). The card shows the address to use and how many programs are
+connected, and the simulator remembers your choice the next time it starts.
+
+**Web interface.** The bench's Web interface button opens the simulator's own
+web pages for the site, in the console's style.
 
 **Help.** The touchscreen's Help, written in our own words.
 
-**Updates.** The program checks this page for a newer release and offers to
-install it. It never installs anything without your click.
+**Updates.** Once a day at start-up the program asks GitHub for this
+repository's list of releases, sending only its own version number, and offers
+a newer one if there is one. It never installs anything without your click.
+Turn the check off with **Check at start** in the bench header.
+
+**Weather.** The bench can fetch the outdoor temperature for a ZIP code: it
+sends the ZIP code to Zippopotam.us and the location and date to
+Open-Meteo.com, only when you ask it to.
 
 ## Requirements
 
@@ -51,7 +64,7 @@ install it. It never installs anything without your click.
 ## Install
 
 1. Download `TLS450-Simulator-Setup-<version>.exe` from the
-   [latest release](../../releases).
+   [latest release](https://github.com/ghostrdr-ctrl/TLS-450-Plus-Simulator/releases).
 2. Run it. Windows may show "Windows protected your PC", because the
    installer is not code-signed yet: click **More info**, then **Run anyway**.
 3. Start **TLS-450PLUS Simulator** from the Start menu or the desktop.
@@ -59,7 +72,10 @@ install it. It never installs anything without your click.
 Each release also lists the installer's SHA-256 checksum.
 
 To remove it: Settings > Apps > TLS-450PLUS Simulator > Uninstall. Your data
-folder (`%APPDATA%\TLS450Simulator`, loaded snapshots and exports) is kept.
+folders are kept: `%APPDATA%\TLS450Simulator` (loaded snapshots, exports and
+settings) and `%LOCALAPPDATA%\TLS450Simulator` (the window's browser data).
+Delete them by hand if you want everything gone. Snapshots you load stay on
+your PC; the program sends nothing from them anywhere.
 
 ## Status and warnings
 
@@ -80,14 +96,15 @@ authorized by, sponsored by or endorsed by Gilbarco Veeder-Root, Veeder-Root,
 Vontier Corporation or any of their affiliates. "Veeder-Root" and
 "TLS-450PLUS" are trademarks of their respective owners and appear here only
 to say, factually, which console this program simulates. No Gilbarco
-Veeder-Root software, artwork or documentation is included.
+Veeder-Root software or artwork is included, and the help is written in our
+own words.
 
-## Licence
+## License
 
 Free to use, including at work and for training others. It is **not open
 source**: you may not sell it, modify it, or decompile, disassemble or reverse
 engineer it. The full terms are in [`LICENSE`](LICENSE). Third-party
-components and their licences are listed in
+components and their licenses are listed in
 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
 
 The source code is kept private. This repository holds the releases only.

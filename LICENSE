@@ -14,11 +14,11 @@ Copyright (c) 2026 Verbose Software. All rights reserved.
    a. sell, rent, lease or sublicense the software, or include it in anything
       that is sold;
    b. modify it, or distribute it in any form other than the unmodified
-      published installer;
+      published installer (section 1 is the only redistribution allowed);
    c. decompile, disassemble or otherwise reverse engineer it, or attempt to
       derive its source code, except where the law expressly allows this
       despite this restriction;
-   d. remove or change this licence or any copyright, trademark or other
+   d. remove or change this license or any copyright, trademark or other
       notice in it;
    e. present the software, or anything made from it, as your own work.
 
@@ -36,7 +36,7 @@ Copyright (c) 2026 Verbose Software. All rights reserved.
    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL
-   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   VERBOSE SOFTWARE OR ANY CONTRIBUTOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
    DEALINGS IN THE SOFTWARE.
@@ -45,7 +45,21 @@ Copyright (c) 2026 Verbose Software. All rights reserved.
    on the simulator first, back up the real console before any change, and
    check the result on the console itself.
 
-5. Independence and trademarks
+5. Beta, support and updates
+
+   The software is a beta. It may be changed, have features removed, or stop
+   being published at any time. Verbose Software has no duty to support,
+   maintain or update it.
+
+   The software contacts the internet only for these: once a day at start-up
+   (unless turned off) and when asked, it reads the release list of its
+   GitHub repository, sending its version number; when the user installs an
+   update, it downloads the installer from there; and when the user fetches
+   weather on the bench, it sends the ZIP code and the location and date to
+   the weather services named in THIRD-PARTY-NOTICES.md. System Snapshots
+   and other data the user loads stay on the user's computer.
+
+6. Independence and trademarks
 
    This software is independent. It is not affiliated with, authorized by,
    sponsored by, or endorsed by Veeder-Root, Gilbarco Veeder-Root, Vontier
@@ -53,13 +67,13 @@ Copyright (c) 2026 Verbose Software. All rights reserved.
    trademarks of their respective owners, used only to state what console the
    software simulates.
 
-6. Third-party components
+7. Third-party components
 
    The software includes components from other authors under their own
-   licences, listed in THIRD-PARTY-NOTICES.md. Those licences apply to those
-   components; nothing in this licence limits the rights they give.
+   licenses, listed in THIRD-PARTY-NOTICES.md. Those licenses apply to those
+   components; nothing in this license limits the rights they give.
 
-7. Termination
+8. Termination
 
    This permission ends automatically if you break any of these terms. You
    must then stop using the software and delete every copy you have.
