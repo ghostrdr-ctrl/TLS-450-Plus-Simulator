@@ -56,7 +56,10 @@ Copyright (c) 2026 Verbose Software. All rights reserved.
    GitHub repository, sending its version number; when the user installs an
    update, it downloads the installer from there; and when the user fetches
    weather on the bench, it sends the ZIP code and the location and date to
-   the weather services named in THIRD-PARTY-NOTICES.md. System Snapshots
+   the weather services named in THIRD-PARTY-NOTICES.md; and when the user runs
+   Ping or Traceroute on the touchscreen, it sends those probes from the
+   user's computer to the address the user typed, and looks a typed name up
+   with the computer's DNS. System Snapshots
    and other data the user loads stay on the user's computer.
 
 6. Independence and trademarks

@@ -54,6 +54,13 @@ Turn the check off with **Check at start** in the bench header.
 sends the ZIP code to Zippopotam.us and the location and date to
 Open-Meteo.com, only when you ask it to.
 
+**Ping and Traceroute.** On the touchscreen's Diagnostics > Communication
+screens, the simulator runs a real ping or traceroute from your PC to the
+address you type and shows the result in the console's format, so the answer
+is your PC's network, not the site's. A name you type is looked up with your
+PC's DNS. It sends nothing else. Start the program with `--no-network` to turn
+this off.
+
 ## Requirements
 
 - Windows 10 or 11, 64-bit.
@@ -69,7 +76,7 @@ Open-Meteo.com, only when you ask it to.
    installer is not code-signed yet: click **More info**, then **Run anyway**.
 3. Start **TLS-450PLUS Simulator** from the Start menu or the desktop.
 
-Each release also lists the installer's SHA-256 checksum.
+Each release also has the installer's SHA-256 checksum attached, as a `.sha256` file.
 
 To remove it: Settings > Apps > TLS-450PLUS Simulator > Uninstall. Your data
 folders are kept: `%APPDATA%\TLS450Simulator` (loaded snapshots, exports and

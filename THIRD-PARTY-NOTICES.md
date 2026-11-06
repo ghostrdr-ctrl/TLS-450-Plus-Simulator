@@ -125,6 +125,7 @@ THIRD-PARTY-NOTICES.txt, here and in the program's folder.
 | windows-numerics | 0.3.1 | MIT OR Apache-2.0 |
 | windows-result | 0.4.1 | MIT OR Apache-2.0 |
 | windows-strings | 0.5.1 | MIT OR Apache-2.0 |
+| windows-sys | 0.61.2 | MIT OR Apache-2.0 |
 | windows-threading | 0.2.1 | MIT OR Apache-2.0 |
 | windows-version | 0.1.7 | MIT OR Apache-2.0 |
 | writeable | 0.6.4 | Unicode-3.0 |
